@@ -1,0 +1,20 @@
+
+<div class="landing"  >
+    <div class="container" >
+        <div class="row">
+            <button type="button" class="btn btn-dark" (click)="getData()" >
+                    click to see the all the product 
+             </button>
+            <div class="col-xs-12" *ngIf="pageState==='landing'">
+                
+                <h6 
+                    *ngFor="let product of products; let index = index"
+                    (click)="getDetails(product.id, index)">
+                    {{product.name}}</h6>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="pageState==='notLanding'" >
+    <app-product-detail [productId]="details" [indexNum]="indexNumber"></app-product-detail>
+</div>
