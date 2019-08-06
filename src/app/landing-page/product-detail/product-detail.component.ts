@@ -30,12 +30,10 @@ export class ProductDetailComponent implements OnInit {
   ngOnInit() {
     return this.productService.getProductDetails().subscribe(
       data=>{
-        // console.log(data);
+        console.log(data);
         let eachProduct = data['groups'];
-        // console.log(eachProduct);
+        console.log(eachProduct);
         this.products = eachProduct;
-        // console.log(eachProduct);
-        // console.log(eachProduct[this.indexNum]);
         this.productDetails = eachProduct[this.indexNum]['images'];
         this.prodoutName = eachProduct[this.indexNum]['name'];
       }

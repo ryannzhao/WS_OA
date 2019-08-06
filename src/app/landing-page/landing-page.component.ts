@@ -11,6 +11,7 @@ export class LandingPageComponent implements OnInit {
   pageState="landing";
   details ="";
   products : any;
+  heroImage: string;
   indexNumber=0;
   constructor(private productService: ProductService){}
 
@@ -25,6 +26,7 @@ export class LandingPageComponent implements OnInit {
       data=>{
         this.products = data['groups'];
         this.pageState="landing";
+        this.heroImage = this.products[this.indexNumber]['hero']
 
       }
     )

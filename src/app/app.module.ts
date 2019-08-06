@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductDetailComponent } from './landing-page/product-detail/product-detail.component';
 import { CommonModule } from '@angular/common';
-// import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     BrowserModule,
     HttpClientModule,
     NgbModule,
-    // AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
