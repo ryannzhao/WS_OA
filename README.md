@@ -1,10 +1,11 @@
 # SonomaOA
+This is a single web application to show William Sonoma's products. 
 
-Description:
-This is a single web application to show several products of William Sonoma
+## Installation
+Clone from the github page, run `npm install` for all the node_modules
 
-Installation
-open this file in any ide, run npm install first,
-then run npm run start
-the web application will apear on  local:4200
+## Development server
+Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. 
 
+## Further help
+You can send email to ryannzhao95@gmail.com for any question.
